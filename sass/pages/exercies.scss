@@ -1,0 +1,66 @@
+
+/* скрываем чекбоксы и блоки с содержанием */
+.hide {
+    display: none; 
+    overflow: hidden;
+    transition: 0.4s;
+}
+.hide + label ~ div{
+    // display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+}
+/* оформляем текст label */
+.hide + label {
+    //border-bottom: 1px dotted #fff;
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden; 
+    font-family: 'Secular One', sans-serif;
+    font-size: 30px;
+    transition: 0.4s;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: #EA670F;
+    border-bottom: 0;
+    
+    
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    //display: block; 
+    height: 100%;
+    color: #fff;
+    padding: 10px; 
+    font-family: 'Secular One', sans-serif;
+    font-size: 23px;
+    transition: 0.4s;
+    
+}
+
+/* demo контейнер */
+.demo {
+    margin: 5% 10%;
+}
+
+.image_exercies{
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border:8px solid #EA670F;
+    
+}
+.name-exercies{
+    text-align: left;
+}
+
+.border_blockk{
+    margin-top: 10px;
+    text-align: center;
+    border: #EA670F 2px dashed;
+    padding: 5px;
+}

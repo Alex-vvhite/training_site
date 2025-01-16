@@ -1,0 +1,16 @@
+@import "sass/abstract/constants.scss";
+@import "sass/abstract/mixin.scss";
+@import "sass/base/reset.scss";
+@import "sass/base/hamburger.scss";
+@import "sass/layout/header.scss";
+@import "sass/layout/main.scss";
+@import "sass/pages/web_training.scss";
+@import "sass/pages/exercies.scss";
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+    background-color: #1E1E1E;
+}

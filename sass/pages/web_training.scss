@@ -1,0 +1,67 @@
+.section_info_page{
+    background-image: url(image/page_training/back.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    // opacity: 0.6;
+    z-index: -1;
+    margin-bottom: 25px;
+    background-color: #1e1e1e;
+    opacity: 0.6;
+    .container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       
+        .text_container{
+            
+            margin-top: 150px;
+            font-family: 'Secular One', sans-serif;
+            font-size: 45px;
+            letter-spacing: 2px;
+            color: #fff;
+            font-weight: 600;
+            opacity: 1.0;
+            -webkit-text-stroke: 1px darkgrey;
+            
+            .no-ie {
+                font-size: 65px;
+                letter-spacing: 2px;
+                color: #fff;
+                font-weight: 800;
+                -webkit-text-stroke: 1px darkgrey;
+                -webkit-text-fill-color: transparent;
+             
+                font-family: 'Secular One', sans-serif;
+              }
+        }
+    }
+}
+.section_about_training{
+    .container{
+        margin-bottom: 25px;
+        .text{
+            font-family: 'Secular One', sans-serif;
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+.form_anketa_button{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+    background: #EA670F;
+    padding: 12px 71px 12px 71px;
+    transition: 0.3s;
+    &:hover{
+        background-color: #783305;
+        border-radius: 10px;
+        //text-decoration:underline;
+    }
+}

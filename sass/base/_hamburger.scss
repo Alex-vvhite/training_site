@@ -1,0 +1,73 @@
+%hamburger-line{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: #FFFFDF;;
+    border-radius: 66px;
+    height: 2px;
+    width: 100%;
+}
+
+.hamburger_block{
+   
+    text-align: right;
+    cursor: pointer;
+   
+        display: block;
+        padding-right: 42px;
+        padding-top: 15px;
+        z-index: 10;
+   
+    // @include table{
+    //     padding-right: 16px;
+    //     padding-top: 39px;
+    // }
+}
+.hamburger_block._active{
+    // padding-right: 0px;
+    // padding-top: 0px;
+    padding-right: 42px;
+        padding-top: 15px;
+}
+.hamburger{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    @include table{
+        width: 35px;
+    }
+    
+    .hamburger__line{
+        transition: all 0.4s ease 0s;
+        @extend %hamburger-line;
+        top: calc(40% - 1.5px);
+        left: 0 ;
+    }
+    &::before{
+        transition: all 0.4s ease 0s;
+        @extend %hamburger-line;
+        top: 4px;
+        left: 0;
+        
+    }
+    &::after{
+        transition: all 0.4s ease 0s;
+        @extend %hamburger-line;
+        bottom: 13px;
+        left: 0;
+    }
+}
+.hamburger._active span {
+    transform: scale(0) translate(0px, -50px);
+}
+.hamburger._active::before{
+    z-index: 15;
+    top:50%;
+    transform: rotate(-45deg) translate(-25px, -10px);
+}
+.hamburger._active::after{
+    z-index: 15;
+    bottom: 50%;
+    transform: rotate(45deg) translate(-6px, 24px);
+}

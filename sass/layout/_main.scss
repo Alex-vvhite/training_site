@@ -1,0 +1,238 @@
+// body._lock{
+//     overflow: hidden;
+// }
+.setion_first{
+    //background-image: url(image/section-1/bg_section1.png);
+    // background-image: url(image/section-1/back_fo.jpeg);
+    // background-repeat: no-repeat;
+    // background-size: 100% 90%;
+    min-height: 652px;
+    .slider{
+        z-index: -1;
+        box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        .slider_image{
+            max-width: 100%;
+            // height: 60%;
+        }
+    }
+    .section_items{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -200px;
+        
+        .block{
+            width: 387px;
+            height: 387px;
+            font-family: 'Kantumruy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 72px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            .text{
+                width: 253px;
+                color: #FFFFFF;  
+            }
+            &:nth-child(1){
+                background-color: #F0B407;
+                opacity: 0.9;
+            }
+            &:nth-child(2){
+                background-color: #11D91B;
+                opacity: 0.9;
+            }
+            &:nth-child(3){
+                background-color: #0767F0;
+                opacity: 0.9;
+            }
+        }
+    }
+    
+}
+.font_fml{
+    font-family: 'Kantumruy';
+    font-style: normal;
+    color: #FFFFFF;
+}
+.name{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 70px;
+}
+.text_1{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 63px;
+    margin-bottom: 20px;
+}
+.text_2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 56px;
+}
+.training_btn{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 45px;
+    background: #EA670F;
+    padding: 12px 71px 12px 71px;
+    transition: 0.3s;
+    &:hover{
+        background-color: #783305;
+        border-radius: 10px;
+        //text-decoration:underline;
+    }
+}
+
+.section_second{
+    margin-top: 70px;
+    padding-bottom: 70px;
+    .container{
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        .first_block{
+            padding-top: 220px;
+            max-width: 1056px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left_info{
+                max-width: 610px;
+            }
+            .right_info{
+                font-weight: 700;
+                font-size: 275px;
+                line-height: 497px;
+            }
+        }
+
+        .second_block{
+            max-width: 1056px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 290px;
+            .left_info{
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            .right_info{
+                .image_margin{
+                    margin-bottom: 90px;
+                }
+                .text_block{
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 63px;
+                    max-width: 406px;
+                }
+                .text{
+                    max-width: 406px;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 29px;
+                }
+            }
+        }
+        
+        .third_block{
+            max-width: 1056px;
+            margin: 0 auto;
+            margin-top: 290px;
+            .block_items{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .left_info{
+                    font-weight: 700;
+                    font-size: 275px;
+                    line-height: 497px;
+                }
+                .right_info{
+                    max-width: 525px;
+                }
+            }
+        }
+
+        .fourth_block{
+            max-width: 1056px;
+            margin: 0 auto;
+            margin-top: 200px;
+            .block_items{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                .block_image_2,.block_image_3{
+                    max-width: 285px;
+                }
+                .block_image_3{
+                    margin-top: 500px;
+                }
+            }
+        }
+
+        .fifth_block{
+            max-width: 1056px;
+            margin: 0 auto;
+            margin-top: 200px;
+            padding-bottom: 400px;
+            .block_items{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .left_block{
+                    .text{
+                        font-weight: 400;
+                        font-size: 35px;
+                        line-height: 63px;
+                    }
+                    .text_2{
+                        font-family: 'Kantumruy';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 45px;
+                        line-height: 81px;
+                        color: #EA670F;
+                    }
+                    .text_3{
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 29px;
+                        width: 525px;
+                    }
+                }
+                .right_block{
+                    
+                   text-align: center;
+                    .text_block{
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 29px;
+                        max-width: 476px;
+                        margin-bottom: 100px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+#rezalt_t{
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-weight: 400;
+}
